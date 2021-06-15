@@ -141,7 +141,7 @@ a:hover {
     margin: 12px 0;
     top: 65%;
     left: 2%; 
-    
+    border-radius: 25px;
 }
 .weißeboxtext h3 {
   position: absolute;
@@ -222,7 +222,7 @@ a:hover {
   color: white;
   font-size: 40;
   left: 61.5%;
-  top: 24.5%; 
+  top: 25%; 
   cursor: pointer;
 }
 .socialtext h1 {
@@ -258,7 +258,7 @@ height: 10px;
 color: white;
 font-size: 30;
 left: 81%;
-top: 24.5%; 
+top: 25%; 
 cursor: pointer;
 }
 .strich3 {
@@ -276,7 +276,7 @@ cursor: pointer;
   color: white;
   font-size: 30;
   left: 81%;
-  top: 44.5%; 
+  top: 45%; 
   cursor: pointer;
 }
 .inbutton {
@@ -302,7 +302,7 @@ cursor: pointer;
   color: white;
   font-size: 30;
   left: 61%;
-  top: 44.5%; 
+  top: 45.5%; 
   cursor: pointer;
 }
 .twibutton{
@@ -328,7 +328,7 @@ cursor: pointer;
   color: white;
   font-size: 30;
   left: 71%;
-  top: 64.5%; 
+  top: 65%; 
   cursor: pointer;
 }
 .shopbutton{
