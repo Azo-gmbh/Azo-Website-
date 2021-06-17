@@ -1,0 +1,280 @@
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(src/Pictures/background.png) no-repeat;
+    background-size: cover;
+}
+.grauebox {
+    position: absolute;
+    background: rgb(27, 26, 26);
+    width: 1853px;
+    height: 65px;
+    left: 0%;
+    top: 0%;
+    padding: 10px;
+    border: 3px solid #363636;
+}
+.haubtseite a {
+    position: absolute;
+    color: rgba(82, 78, 78, 0.514);
+    font-family: Impact, fantasy;
+    font-size: 26px;
+    left:35%;
+    top: 29%; 
+    text-decoration: none;
+    -webkit-transition: color ease-in 0.1s;
+    -moz-transition: color ease-in 0.1s;
+    -o-transition: color ease-in 0.1s;
+    transition: color ease-in 0.1s;
+}
+a:hover {
+  color: rgb(12, 128, 122);
+}
+  .FAQ a {
+    position: absolute;
+    color: rgba(82, 78, 78, 0.514);
+    font-family: Impact, fantasy;
+    font-size: 26px;
+    left:44%;
+    top: 29%; 
+    text-decoration: none;
+    -webkit-transition: color ease-in 0.1s;
+    -moz-transition: color ease-in 0.1s;
+    -o-transition: color ease-in 0.1s;
+    transition: color ease-in 0.1s;
+}
+a:hover {
+  color: rgb(12, 128, 122);
+}
+  .Kontackt a {
+    position: absolute;
+    text-decoration: none;
+    color: rgba(82, 78, 78, 0.514);
+    font-family: Impact, fantasy;
+    font-size: 26px;
+    left:49%;
+    top: 29%; 
+    -webkit-transition: color ease-in 0.1s;
+    -moz-transition: color ease-in 0.1s;
+    -o-transition: color ease-in 0.1s;
+    transition: color ease-in 0.1s;
+}
+a:hover {
+  color: rgb(12, 128, 122);
+}
+  .Shop a {
+    position: absolute;
+    color: rgba(82, 78, 78, 0.514);
+    font-family: Impact, fantasy;
+    font-size: 26px;
+    left:57%;
+    text-decoration: none;
+    top: 29%;
+    -webkit-transition: color ease-in 0.1s;
+    -moz-transition: color ease-in 0.1s;
+    -o-transition: color ease-in 0.1s;
+    transition: color ease-in 0.1s;
+}
+a:hover {
+  color: rgb(12, 128, 122);
+}
+.titeltext h1{
+    position: absolute;
+    color: white;
+    width: 900px;
+    height: 100px;
+    top: 20%;
+    left: 6%;
+    font-size: 20px;
+    font-family: inherit;
+}
+.titeltext h2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -40%;
+    left: 0%;
+    font-size: 20px;
+}
+.anmeldebutton {
+    width: 150px;
+    height: 50px;
+    background: 	#0000003d;
+    position: absolute;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+    font-family: fantasy;
+    text-decoration: none;
+    top: 5%;
+    left: 91%; 
+    border-radius: 25px;
+    border: 2px solid rgb(187, 184, 184);
+  }
+  .downloadwinbox {
+    position: absolute;
+    background: rgba(59, 59, 59, 0.582);
+    width: 500px;
+    height: 350px;
+    left: 5%;
+    top: 650%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .win32button {
+    position: absolute;
+    background: rgba(80, 80, 80, 0.424);
+    width: 200px;
+    height: 150px;
+    left: 7%;
+    top: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: black;
+    border-color: rgb(244, 245, 179);
+    cursor: pointer;
+  }
+.win32button:hover{
+  box-shadow: inset 0 0 0 0.2rem black;
+}
+.winbild32 i{
+  position: absolute;
+  left: 19%;
+  top:57%;
+  z-index: -1;
+  color: rgb(255, 255, 255);
+}
+.win64button {
+  position: absolute;
+  background: rgba(80, 80, 80, 0.424);
+  width: 200px;
+  height: 150px;
+  left: 55%;
+  top: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: black;
+  border-color: rgb(244, 245, 179);
+  cursor: pointer;
+}
+.win64button:hover{
+box-shadow: inset 0 0 0 0.2rem black;
+}
+.winbild64 i{
+  position: absolute;
+  left: 67%;
+  top:57%;
+  z-index: -1;
+  color: rgb(255, 255, 255);
+}
+.textforwin64 {
+  position: absolute;
+  left: 58%;
+  top: 80%;
+  font-size: 80%;
+  color: rgba(202, 202, 202, 0.787);
+  z-index: -1;
+}
+.textforwin32 {
+  position: absolute;
+  left: 10%;
+  top: 80%;
+  font-size: 80%;
+  color: rgba(202, 202, 202, 0.787);
+  z-index: -1;
+}
+.textforwin {
+  position: absolute;
+  left: 21%;
+  top: 10%;
+  font-size: 90%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.strichuntertext {
+  position: absolute;
+  background: rgba(75, 75, 75, 0.842);
+  width: 350px;
+  height: 2px;
+  left: -5%;
+  top: 55%;
+}
+.strichunterp {
+  position: absolute;
+  background: rgba(75, 75, 75, 0.842);
+  width: 300px;
+  height: 2px;
+  left: 5%;
+  top: 95%;
+}
+.macdownload {
+  position: absolute;
+  background: rgba(59, 59, 59, 0.582);
+  width: 500px;
+  height: 350px;
+  left: 37%;
+  top: 650%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.macbutton{
+  position: absolute;
+  background: rgba(80, 80, 80, 0.424);
+  width: 450px;
+  height: 150px;
+  left: 7%;
+  top: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: black;
+  border-color: rgb(244, 245, 179);
+  cursor: pointer;
+}
+.macbutton:hover{
+  box-shadow: inset 0 0 0 0.2rem black;
+}
+.macbild i{
+  position: absolute;
+  left: 42%;
+  top:57%;
+  z-index: -1;
+  color: rgb(255, 255, 255);
+}
+.mactext {
+  position: absolute;
+  left: 39%;
+  top: 80%;
+  font-size: 80%;
+  color: rgba(202, 202, 202, 0.787);
+  z-index: -1;
+}
+.strichuntermactext {
+  position: absolute;
+  background: rgba(75, 75, 75, 0.842);
+  width: 300px;
+  height: 2px;
+  left: -10%;
+  top: 75%;
+}
+.textformac {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  font-size: 90%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.linuxdownload {
+    position: absolute;
+    background: rgba(59, 59, 59, 0.582);
+    width: 500px;
+    height: 350px;
+    left: 68%;
+    top: 650%;
+    padding: 10px;
+    border-radius: 10px;
+}
