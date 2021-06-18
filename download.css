@@ -92,8 +92,8 @@ a:hover {
 }
 .titeltext h2 {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 0px;
+    height: 0px;
     top: -40%;
     left: 0%;
     font-size: 20px;
@@ -201,15 +201,7 @@ box-shadow: inset 0 0 0 0.2rem black;
   width: 350px;
   height: 2px;
   left: -5%;
-  top: 55%;
-}
-.strichunterp {
-  position: absolute;
-  background: rgba(75, 75, 75, 0.842);
-  width: 300px;
-  height: 2px;
-  left: 5%;
-  top: 95%;
+  top: 80%;
 }
 .macdownload {
   position: absolute;
@@ -277,4 +269,59 @@ box-shadow: inset 0 0 0 0.2rem black;
     top: 650%;
     padding: 10px;
     border-radius: 10px;
+}
+.linuxbutton{
+  position: absolute;
+  background: rgba(80, 80, 80, 0.424);
+  width: 450px;
+  height: 150px;
+  left: 7%;
+  top: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: black;
+  border-color: rgb(244, 245, 179);
+  cursor: pointer;
+}
+.linuxbutton:hover{
+  box-shadow: inset 0 0 0 0.2rem black;
+}
+.linuxbild i{
+  position: absolute;
+  left: 42%;
+  top:57%;
+  z-index: -1;
+  color: rgb(255, 255, 255);
+}
+.linuxtext {
+  position: absolute;
+  left: 39%;
+  top: 80%;
+  font-size: 80%;
+  color: rgba(202, 202, 202, 0.787);
+  z-index: -1;
+}
+.strichunterlinuxtext {
+  position: absolute;
+  background: rgba(75, 75, 75, 0.842);
+  width: 300px;
+  height: 2px;
+  left: -5%;
+  top: 75%;
+}
+.textforlinux {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  font-size: 90%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.titel {
+  position: absolute;
+  left: 22%;
+  top: 190%;
+  font-size: 250%;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
