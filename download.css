@@ -17,6 +17,17 @@ body{
     padding: 10px;
     border: 3px solid #363636;
 }
+.title{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1000px;
+  height: 100px;
+  position: absolute;
+  color: white;
+  font-size: 230%;
+  left: 25%;
+  text-align: center;
+  top: 160%;
+}
 .haubtseite a {
     position: absolute;
     color: rgba(82, 78, 78, 0.514);
@@ -104,7 +115,7 @@ a:hover {
     width: 500px;
     height: 350px;
     left: 5%;
-    top: 650%;
+    top: 500%;
     padding: 10px;
     border-radius: 10px;
   }
@@ -192,7 +203,7 @@ box-shadow: inset 0 0 0 0.2rem black;
   width: 500px;
   height: 350px;
   left: 37%;
-  top: 650%;
+  top: 500%;
   padding: 10px;
   border-radius: 10px;
 }
@@ -249,7 +260,7 @@ box-shadow: inset 0 0 0 0.2rem black;
     width: 500px;
     height: 350px;
     left: 68%;
-    top: 650%;
+    top: 500%;
     padding: 10px;
     border-radius: 10px;
 }
@@ -333,7 +344,7 @@ box-shadow: inset 0 0 0 0.2rem black;
   color: white;
   height: 80px;
   width: 100%;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 80px;
   text-align: center;
   display: block;
@@ -361,4 +372,139 @@ box-shadow: inset 0 0 0 0.2rem black;
 .btnc:before{
   content: "\f12a";
   border-radius: 0px;
+}
+.untengrau{
+  position: absolute;
+  background: rgb(27, 26, 26);
+  width: 1852px;
+  height: 75px;
+  left: -0.15%;
+  top: 1018.5%;
+  padding: 10px;
+  text-decoration: none;
+  border: 3px solid #363636;
+}
+.azo a {
+top: 40%;
+left: 5%;
+width: 150px;
+height: 0px;
+font-family: fantasy ;
+font-size: 17px;
+color: rgba(172, 172, 172, 0.623);
+position: absolute;
+text-decoration: none;
+-webkit-transition: color ease-in 0.1s;
+-moz-transition: color ease-in 0.1s;
+-o-transition: color ease-in 0.1s;
+transition: color ease-in 0.1s;
+}
+.kontakt a{
+top: 40%;
+left: 17%;
+width: 150px;
+height: 0px;
+font-family: fantasy ;
+font-size: 17px;
+color: rgba(172, 172, 172, 0.623);
+position: absolute;
+text-decoration: none;
+-webkit-transition: color ease-in 0.1s;
+-moz-transition: color ease-in 0.1s;
+-o-transition: color ease-in 0.1s;
+transition: color ease-in 0.1s;
+}
+.copy a{
+top: 40%;
+left: 26.5%;
+width: 150px;
+height: 0px;
+font-family: fantasy ;
+font-size: 17px;
+color: rgba(172, 172, 172, 0.623);
+position: absolute;
+text-decoration: none;
+-webkit-transition: color ease-in 0.1s;
+-moz-transition: color ease-in 0.1s;
+-o-transition: color ease-in 0.1s;
+transition: color ease-in 0.1s;
+}
+.dmca a{
+top: 40%;
+left: 37%;
+width: 150px;
+height: 0px;
+font-family: fantasy ;
+font-size: 17px;
+color: rgba(172, 172, 172, 0.623);
+position: absolute;
+text-decoration: none;
+-webkit-transition: color ease-in 0.1s;
+-moz-transition: color ease-in 0.1s;
+-o-transition: color ease-in 0.1s;
+transition: color ease-in 0.1s;
+}
+.privacy a{
+top: 40%;
+left: 50%;
+width: 150px;
+height: 50px;
+font-family: fantasy;
+text-decoration: none;
+font-size: 17px;
+color: rgba(172, 172, 172, 0.623);
+position: absolute;
+-webkit-transition: color ease-in 0.1s;
+-moz-transition: color ease-in 0.1s;
+-o-transition: color ease-in 0.1s;
+transition: color ease-in 0.1s;
+}
+.cookie a{
+top: 40%;
+left: 63%;
+width: 150px;
+height: 0px;
+font-family: fantasy ;
+font-size: 17px;
+color: rgba(172, 172, 172, 0.623);
+position: absolute;
+text-decoration: none;
+-webkit-transition: color ease-in 0.1s;
+-moz-transition: color ease-in 0.1s;
+-o-transition: color ease-in 0.1s;
+transition: color ease-in 0.1s;
+}
+.datent a{
+top: 40%;
+left: 79%;
+width: 150px;
+height: 0px;
+font-family: fantasy ;
+font-size: 17px;
+color: rgba(172, 172, 172, 0.623);
+position: absolute;
+text-decoration: none;
+-webkit-transition: color ease-in 0.1s;
+-moz-transition: color ease-in 0.1s;
+-o-transition: color ease-in 0.1s;
+transition: color ease-in 0.1s;
+}
+.über a{
+top: 40%;
+left: 90%;
+width: 150px;
+height: 0px;
+font-family: fantasy ;
+font-size: 17px;
+color: rgb(172, 172, 172, 0.623);
+position: absolute;
+background-color: white;
+text-decoration: none;
+-webkit-transition: color ease-in 0.1s;
+-moz-transition: color ease-in 0.1s;
+-o-transition: color ease-in 0.1s;
+transition: color ease-in 0.1s;
+}
+a:hover {
+color: rgb(12, 128, 122);
 }

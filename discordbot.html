@@ -1,0 +1,92 @@
+<head>
+    <link rel="stylesheet" href="discordbot.css">
+    <script src="https://kit.fontawesome.com/b54aaf805f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div class="grauebox">
+       <div class="navbar">
+           <div class="FAQ">
+               <a href="#">FAQ</a>
+           </div>
+           <div class="Kontackt">
+               <a href="Kontackt.html">Kontackt</a>
+           </div>
+           <div class="Shop">
+               <a href="shop.html">Shop</a>
+           </div>
+           <div class="anmelden">
+               <input type="button" class="anmeldebutton" value="Anmelden" onclick="window.location.href='shop.html'">
+           </div>
+       </div>
+</head>
+<body>
+    <div class="invitebox">
+        <div class="textover">
+            <div class="azobot">
+                 <h1>Azoniq Bot</h1>
+                 <p>The best Multipurpose Bot</p>
+            </div>
+            <div class="strich">
+            </div>
+        </div>
+        <input type="button" class="invite" value="" onclick="window.location.href='https://discord.com/api/oauth2/authorize?client_id=825469175010426880&permissions=8&scope=bot'">
+        <div class="textinbox">
+            <h1>Invite</h1>
+                <div class="einstellungen.">
+                    <input type="button" class="einstellungen" value="" onclick="window.location.href=''">
+                    <div class="schrifteinstellungen">
+                        <h1>Einstellungen</h1>
+                        <div class="logoeinstellungen">
+                            <i class="fas fa-cog fa-5x"></i> 
+                        </div>
+                    </div>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-discord fa-5x"></i>
+                </div>
+            </div>
+        </div>
+    <div class="sidebar">
+        <ul>
+            <li><a class="fas fa-home" href="haubtseite.html">  Home</a></li>
+            <li><a class="fas fa-gamepad" href="downloadseite.html"> Mc Client</a></li>
+            <li><a class="far fa-address-card" href=""></a></li>
+            <li><a class="fab fa-adn" href=""></a></li>
+            <li><a class="far fa-address-card" href=""></a></li>
+        </ul>
+    </div>
+    <div class="untengrau">
+        <div class="grauertext">
+                <div class="azo">
+                    <a href="Kontackt.html">© 2021 Azo, inc.</a>
+                </div>
+                <div class="kontakt">
+                    <a href="Kontackt.html">Kontakt</a>
+                </div>
+                <div class="copy">
+                    <a href="Kontackt.html">Copyright</a>
+                </div> 
+                <div class="dmca">
+                    <a href="Kontackt.html">DMCA Richtlinien</a>
+                </div>
+                <div class="privacy">
+                    <h1><a href="Kontackt.html">Privacy Setings</a></h1>
+                </div>
+                <div class="cookie">
+                    <h1><a href="Kontackt.html">Cookie-Richtlienen</a></h1>
+                </div>
+                <div class="datent">
+                    <h1><a href="Kontackt.html">Datenschutz</a></h1>
+                </div>
+                <div class="über">
+                    <h1><a href="Kontackt.html">Über uns</a></h1>
+                </div>
+          </div>
+    </div>
+    <a class="btn"></a>
+    <script type="text/javascript">
+       $('.btn').on("click", function(){
+         $('.btn').toggleClass('btnc')
+         $('.sidebar').toggleClass('side')
+       })
+    </script>
+</body>

@@ -1,3 +1,4 @@
+@import'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 body{
     margin: 0;
@@ -22,7 +23,7 @@ body{
     width: 900px;
     height: 100px;
     top: 20%;
-    left: 6%;
+    left: 18%;
     font-size: 20px;
     font-family: inherit;
 }
@@ -31,8 +32,26 @@ body{
     width: 10px;
     height: 10px;
     top: -40%;
-    left: 0%;
+    left: 12%;
     font-size: 20px;
+}
+.titelbildspiegelung h1{
+  position: absolute;
+  color: white;
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 76%;
+  font-size: 20px;
+  font-family: inherit;
+}
+.titelbildspiegelung h2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -40%;
+  left: 70%;
+  font-size: 20px;
 }
 .Download a {
     position: absolute;
@@ -415,4 +434,193 @@ cursor: pointer;
   left: 91%; 
   border-radius: 25px;
   border: 2px solid rgb(187, 184, 184);
+}
+.sidebar{
+  float: left;
+  width: 150px;
+  height: 800%;
+  margin-left: -200px;
+  background: #2e2e2e8f;
+  overflow: hidden;
+  transition: 0.8s all;
+  border-radius: 10px;
+}
+.side{
+  margin-left: 0;
+}
+.sidebar ul{
+  margin: 0;
+  padding: 0;
+}
+.sidebar ul li{
+  list-style: none;
+}
+.sidebar ul li a{
+  text-decoration: none;
+  color: white;
+  height: 80px;
+  width: 100%;
+  font-size: 25px;
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  transition: 0.6 all;
+}
+.sidebar ul li a:hover {
+  background: #383a3b;
+}
+.btn{
+  float: left;
+  padding: 0 10px;
+  font-size: 55px;
+  text-decoration: none;
+  position: absolute;
+  color: #434950;
+  background-color: #2e2e2e8f;
+  border-radius: 10px;
+  font-family: Ionicons;
+  cursor: pointer;
+  z-index: 2;
+}
+.btn:before{
+  content: "\f20d";
+}
+.btnc:before{
+  content: "\f12a";
+  border-radius: 0px;
+}
+.untengrau{
+    position: absolute;
+    background: rgb(27, 26, 26);
+    width: 1838px;
+    height: 75px;
+    left: -0.15%;
+    top: 1800%;
+    padding: 10px;
+    text-decoration: none;
+    border: 3px solid #363636;
+}
+.azo a {
+  top: 40%;
+  left: 5%;
+  width: 150px;
+  height: 0px;
+  font-family: fantasy ;
+  font-size: 17px;
+  color: rgba(172, 172, 172, 0.623);
+  position: absolute;
+  text-decoration: none;
+  -webkit-transition: color ease-in 0.1s;
+  -moz-transition: color ease-in 0.1s;
+  -o-transition: color ease-in 0.1s;
+  transition: color ease-in 0.1s;
+}
+.kontakt a{
+  top: 40%;
+  left: 17%;
+  width: 150px;
+  height: 0px;
+  font-family: fantasy ;
+  font-size: 17px;
+  color: rgba(172, 172, 172, 0.623);
+  position: absolute;
+  text-decoration: none;
+  -webkit-transition: color ease-in 0.1s;
+  -moz-transition: color ease-in 0.1s;
+  -o-transition: color ease-in 0.1s;
+  transition: color ease-in 0.1s;
+}
+.copy a{
+  top: 40%;
+  left: 26.5%;
+  width: 150px;
+  height: 0px;
+  font-family: fantasy ;
+  font-size: 17px;
+  color: rgba(172, 172, 172, 0.623);
+  position: absolute;
+  text-decoration: none;
+  -webkit-transition: color ease-in 0.1s;
+  -moz-transition: color ease-in 0.1s;
+  -o-transition: color ease-in 0.1s;
+  transition: color ease-in 0.1s;
+}
+.dmca a{
+  top: 40%;
+  left: 37%;
+  width: 150px;
+  height: 0px;
+  font-family: fantasy ;
+  font-size: 17px;
+  color: rgba(172, 172, 172, 0.623);
+  position: absolute;
+  text-decoration: none;
+  -webkit-transition: color ease-in 0.1s;
+  -moz-transition: color ease-in 0.1s;
+  -o-transition: color ease-in 0.1s;
+  transition: color ease-in 0.1s;
+}
+.privacy a{
+  top: 40%;
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  font-family: fantasy;
+  text-decoration: none;
+  font-size: 17px;
+  color: rgba(172, 172, 172, 0.623);
+  position: absolute;
+  -webkit-transition: color ease-in 0.1s;
+  -moz-transition: color ease-in 0.1s;
+  -o-transition: color ease-in 0.1s;
+  transition: color ease-in 0.1s;
+}
+.cookie a{
+  top: 40%;
+  left: 63%;
+  width: 150px;
+  height: 0px;
+  font-family: fantasy ;
+  font-size: 17px;
+  color: rgba(172, 172, 172, 0.623);
+  position: absolute;
+  text-decoration: none;
+  -webkit-transition: color ease-in 0.1s;
+  -moz-transition: color ease-in 0.1s;
+  -o-transition: color ease-in 0.1s;
+  transition: color ease-in 0.1s;
+}
+.datent a{
+  top: 40%;
+  left: 79%;
+  width: 150px;
+  height: 0px;
+  font-family: fantasy ;
+  font-size: 17px;
+  color: rgba(172, 172, 172, 0.623);
+  position: absolute;
+  text-decoration: none;
+  -webkit-transition: color ease-in 0.1s;
+  -moz-transition: color ease-in 0.1s;
+  -o-transition: color ease-in 0.1s;
+  transition: color ease-in 0.1s;
+}
+.über a{
+  top: 40%;
+  left: 90%;
+  width: 150px;
+  height: 0px;
+  font-family: fantasy ;
+  font-size: 17px;
+  color: rgb(172, 172, 172, 0.623);
+  position: absolute;
+  background-color: white;
+  text-decoration: none;
+  -webkit-transition: color ease-in 0.1s;
+  -moz-transition: color ease-in 0.1s;
+  -o-transition: color ease-in 0.1s;
+  transition: color ease-in 0.1s;
+}
+a:hover {
+  color: rgb(12, 128, 122);
 }
