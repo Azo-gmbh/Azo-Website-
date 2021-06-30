@@ -1,227 +1,351 @@
-@import'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
-body{
+body {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: url(src/Pictures/background.jpg) no-repeat;
-    background-size: cover;
+    padding: 0; 
+    background-color: rgb(255, 255, 255);
 }
-.grauebox {
-  position: absolute;
-  background: rgb(27, 26, 26);
-  width: 1838px;
-  height: 65px;
-  left: 0%;
-  top: 0%;
-  padding: 10px;
-  border: 3px solid #363636;
+.cta button{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-.titeltext h1{
-    position: absolute;
-    color: white;
-    width: 900px;
-    height: 100px;
-    top: 20%;
-    left: 18%;
-    font-size: 20px;
-    font-family: inherit;
-}
-.titeltext h2 {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: -40%;
-    left: 12%;
-    font-size: 20px;
-}
-.titelbildspiegelung h1{
-  position: absolute;
-  color: white;
-  width: 100px;
-  height: 100px;
-  top: 20%;
-  left: 76%;
+li, a{
+  font-family: "Roboto", sans-serif;
+  font-weight: 600px;
   font-size: 20px;
-  font-family: inherit;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-.titelbildspiegelung h2 {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: -40%;
-  left: 70%;
-  font-size: 20px;
+header {
+  display: flex;
+  background: rgb(24, 24, 24);
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0%;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
 }
-.Download a {
-    position: absolute;
-    color: rgba(82, 78, 78, 0.514);
-    font-family: Impact, fantasy;
-    font-size: 26px;
-    left:35%;
-    top: 29%; 
+.logo {
+    position: relative;
+    left: 5%;
+    width: 200px;
+    margin-right: 0%;
+    line-height: 50px;
+}
+.logo a{
     text-decoration: none;
-    -webkit-transition: color ease-in 0.1s;
-    -moz-transition: color ease-in 0.1s;
-    -o-transition: color ease-in 0.1s;
-    transition: color ease-in 0.1s;
+    font-size: 25px;
+    font-family: 'Viaoda Libre', cursive;
+    color: white;
+    letter-spacing: 5px;
 }
-a:hover {
-  color: rgb(12, 128, 122);
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 10px 40px;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+ 
+}
+.nav_links li a:hover{
+  color: #00acee;
+ 
+}
+.cta button {
+  margin-left: -40%;
+  padding: 9px 35px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0, 136, 169,0.8 );
+}
+.bild {
+    width: 100%;
+    height: 10%;
+}
+.whiteboxmiddle {
+  background-color: rgba(255, 255, 255, 0.596);
+  padding: 7px 0%;
+  width: 70%;
+  height: 60%;
+  z-index: 2;
+  border-radius: 1%;
+  left: 18%;
+  position: absolute;
+  top: 20%;
+}
+.newskasten {
+    background-color: rgb(49, 49, 49);
+    padding: 7px 0%;
+    width:100%;
+    height: 15%;
+    z-index: 2;
+    font-family:'Viaoda Libre', cursive ;
+    font-size: 50px;
+    top: 105%;
+    position: absolute;
+    letter-spacing: 3px;
+}
+.newstext h1{
+    font-size: 45px;
+    position: absolute;
+    font-family: 'Viaoda Libre', cursive;
+    color: white;
+    letter-spacing: 5px;
+    left: 47%;
+    top: -10%;
+}
+.newstext hr{
+  position: absolute;
+  font-family: 'Viaoda Libre', cursive;
+  color: white;
+  width: 10%;
+  left: 44.75%;
+  top: 31.5%;
+}
+.news{
+    background-color: rgb(49, 49, 49);
+    padding: 7px 0%;
+    width:100%;
+    height: 75%;
+    z-index: 2;
+    font-family:'Viaoda Libre', cursive ;
+    font-size: 50px;
+    top: 120%;
+    position: absolute;
+    letter-spacing: 3px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .box{
+ position: relative;
+ width: 300px;
+ height: 600px;
+ padding: 20px;
+ background-color: rgb(255, 255, 255); 
+ box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+ border-radius: 4px;
+ margin: 20px;
+ box-sizing: border-box;
+ overflow: hidden;
+ text-align: center;
+}
+.container .box:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .2);
+    z-index: 2;
+    pointer-events: none;
+}
+.container .box .icon {
+  position: relative;
+  width: 80px;
+  height:80px;
+  color: white;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 1s;
+}
+.container .box:nth-child(1) .icon {
+  box-shadow: 0 0 0 0px #26ff00;
+  background: black;
+}
+.container .box:nth-child(1):hover .icon {
+  box-shadow: 0 0 0 600px #017c01;
+}
+.container .box:nth-child(2) .icon {
+  box-shadow: 0 0 0 0px rgb(0, 255, 234);
+  background: black;
+}
+.container .box:nth-child(2):hover .icon {
+  box-shadow: 0 0 0 600px rgb(0, 82, 85);
+}
+.container .box:nth-child(3) .icon {
+  box-shadow: 0 0 0 0px rgb(255, 4, 234);
+  background: black;
+}
+.container .box:nth-child(3):hover .icon {
+  box-shadow: 0 0 0 600px rgb(255, 4, 150);
+}
+.container .box:nth-child(4) .icon {
+  box-shadow: 0 0 0 0px rgb(0, 119, 255);
+  background: black;
+}
+.container .box:nth-child(4):hover .icon {
+  box-shadow: 0 0 0 600px rgb(25, 0, 255);
+}
+.container .box .content{
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+.container .box:hover .content {
+  color: white;
+}
+.container .box .content h1 {
+  font-size: 35px;
+  font-family: 'Roboto', cursive ;
+  margin: 10px 0;
+  padding: 0;
+}
+.container .box .content p {
+  margin: 0;
+  padding: 0;
+  font-size: 40%;
+  font-family: 'Roboto', cursive ;
+}
+.content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transition: all 0.3s ease 0s;
+}
+.content a:hover {
+  color: rgb(0, 0, 0);
+  background: rgba(173, 173, 173, 0.733);
 }
 
-  .FAQ a {
+.bilduntergrau{
+    background-color: rgb(34, 34, 34);
+    padding: 7px 0%;
+    width: 19.5%;
+    height: 25%;
+    z-index: 12;
+    left: 10.25%;
+    top: 30.5%;
     position: absolute;
-    color: rgba(82, 78, 78, 0.514);
-    font-family: Impact, fantasy;
-    font-size: 26px;
-    left:44%;
-    top: 29%; 
-    text-decoration: none;
-    -webkit-transition: color ease-in 0.1s;
-    -moz-transition: color ease-in 0.1s;
-    -o-transition: color ease-in 0.1s;
-    transition: color ease-in 0.1s;
 }
-a:hover {
-  color: rgb(12, 128, 122);
-}
-  .Kontackt a {
-    position: absolute;
-    text-decoration: none;
-    color: rgba(82, 78, 78, 0.514);
-    font-family: Impact, fantasy;
-    font-size: 26px;
-    left:49%;
-    top: 29%; 
-    -webkit-transition: color ease-in 0.1s;
-    -moz-transition: color ease-in 0.1s;
-    -o-transition: color ease-in 0.1s;
-    transition: color ease-in 0.1s;
-}
-a:hover {
-  color: rgb(12, 128, 122);
-}
-  .Shop a {
-    position: absolute;
-    color: rgba(82, 78, 78, 0.514);
-    font-family: Impact, fantasy;
-    font-size: 26px;
-    left:57%;
-    text-decoration: none;
-    top: 29%;
-    -webkit-transition: color ease-in 0.1s;
-    -moz-transition: color ease-in 0.1s;
-    -o-transition: color ease-in 0.1s;
-    transition: color ease-in 0.1s;
-}
-a:hover {
-  color: rgb(12, 128, 122);
-}
-.weißeboxmitte {
-  position: absolute;
-  background: rgba(231, 224, 224, 0.746);
-  width: 1233px;
-  height: 500px;
-  left: 32.5%;
-  top: 350%;
-  padding: 10px;
-  border: 2px solid #030303;
-}
-.weißeboxtext h1 {
-    position: absolute;
-    color: rgb(29, 29, 29);
-    width: 900px;
-    height: 100px;
+.bildupdate {
+    width: 98%;
+    height: 97%;
+    z-index: 12;
+    left: 1%;
     top: 1%;
-    left: 2%;
-    font-size: 35px;
-    font-family: fantasy;
-}
-.weißeboxtext h2 {
     position: absolute;
-    color: rgb(34, 34, 34);
-    width: 500px;
-    height: 100px;
-    top: 14%;
-    left: 2%;
-    font-size: 22px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.buton {
-    width: 450px;
-    height: 125px;
-    background: #3838388f;
+.textunterupdate h1{
+    color: rgb(255, 255, 255);
+    padding: 7px 0%;
+    width: 40%;
+    height: 5%;
+    z-index: 15;
+    left: 15.5%;
+    font-family:'Viaoda Libre', cursive ;
+    font-size: 25px;
+    top: 57%;
     position: absolute;
-    border: 3px solid #704a4a;
-    color: white;
-    padding: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    margin: 12px 0;
+    letter-spacing: 3px;
+}
+.textunterupdate hr{
+    color: rgb(255, 255, 255);
+    width: 9%;
+    z-index: 15;
+    left: 14.75%;
+    top: 64%;
+    position: absolute;
+}
+.textunterupdate p{
+    color: rgb(255, 255, 255);
+    padding: 7px 0%;
+    width: 15%;
+    height: 5%;
+    z-index: 15;
+    left: 13%;
+    font-family:'Roboto', cursive ;
+    font-size: 17px;
     top: 65%;
-    left: 2%; 
-    border-radius: 25px;
+    position: absolute;
+    letter-spacing: 3px;
 }
-.weißeboxtext h3 {
-  position: absolute;
-    color: rgb(34, 34, 34);
-    width: 500px;
-    height: 100px;
-    top: 29%;
-    left: 2%;
-    font-size: 22px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.textunterupdate p1{
+    color: rgb(255, 255, 255);
+    padding: 7px 0%;
+    width: 15%;
+    height: 5%;
+    z-index: 15;
+    left: 13%;
+    font-family:'Roboto', cursive ;
+    font-size: 17px;
+    top: 65%;
+    position: absolute;
+    letter-spacing: 3px;
 }
-.strich1 {
-  position: absolute;
-  background: rgba(47, 47, 47, 0.746);
-  width: 400px;
-  height: 2px;
-  left: 2%;
-  top: 31%;
-}
-.weißeboxtext h4 {
-  position: absolute;
-    color: rgb(34, 34, 34);
-    width: 550px;
-    height: 50px;
-    top: 54%;
-    left: 2%;
+.readme h1 {
+    color: rgb(255, 255, 255);
+    padding: 7px 0%;
+    width: 40%;
+    height: 5%;
+    z-index: 15;
+    left: 15.5%;
+    font-family:'Viaoda Libre', cursive ;
     font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 77%;
+    position: absolute;
+    letter-spacing: 3px;
 }
-.strich2 {
-  position: absolute;
-  background: rgba(47, 47, 47, 0.746);
-  width: 400px;
-  height: 2px;
-  left: 2%;
-  top: 54%;
+.endbar {
+    display: flex;
+    background: rgb(24, 24, 24);
+    padding: 7px 0%;
+    width: 100%;
+    height: 10%;
+    z-index: 2;
+    top: 300%;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
 }
-.downundsocialbutton i {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  color: white;
-  font-size: 75;
-  left: 5%;
-  top: 72%; 
-  cursor: pointer;
+.under_links {
+  list-style: none;
 }
-.text h1 {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 50px;
-  left: 13.5%;
-  top: 67%; 
-  cursor: pointer;
+.under_links li {
+  display: inline-block;
+  padding: 10px 48px;
 }
-.dcbutton {
+.under_links li a {
+  transition: all 0.3s ease 0s;
+ 
+}
+.under_links li a:hover{
+  color: #00acee;
+ 
+}
+
+.dcbutton button{
     width: 200px;
-    height: 50px;
+    height: 60px;
     background: 	rgb(114, 137, 218);
     position: absolute;
     color: white;
@@ -230,10 +354,15 @@ a:hover {
     cursor: pointer;
     margin: 12px 0;
     font-family: fantasy;
-    top: 20%;
-    left: 60%; 
-    border-radius: 4px;
-    border: 2px solid black;
+    top: 82%;
+    left: 2%; 
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+.dcbutton button:hover {
+  background: rgb(0, 51, 192);
 }
 .discord i {
   position: absolute;
@@ -241,23 +370,17 @@ a:hover {
   height: 20px;
   color: white;
   font-size: 40;
-  left: 61.5%;
-  top: 25%; 
+  left: 3%;
+  top: 86.5%; 
   cursor: pointer;
+  transition: all 0.5s ease 0s;
 }
-.socialtext h1 {
-  position: absolute;
-  width: 400px;
-  height: 10px;
-  color: rgb(0, 0, 0);
-  left: 65%;
-  top: 2%; 
-  font-size: 35px;
-  font-family: fantasy;
+.discord i:hover {
+  color: rgb(255, 0, 0);
 }
-.twbutton {
+.twbutton button{
   width: 200px;
-  height: 50px;
+  height: 60px;
   background: 	#00acee;
   position: absolute;
   color: white;
@@ -266,43 +389,66 @@ a:hover {
   cursor: pointer;
   margin: 12px 0;
   font-family: fantasy;
-  top: 20%;
-  left: 80%; 
-  border-radius: 4px;
-  border: 2px solid black;
+  top: 82%;
+  left: 20%; 
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+.twbutton button:hover {
+  background: rgb(42, 5, 255);
 }
 .twitter i {
-position: absolute;
-width: 10px;
-height: 10px;
-color: white;
-font-size: 30;
-left: 81%;
-top: 25%; 
-cursor: pointer;
-}
-.strich3 {
   position: absolute;
-  background: rgba(47, 47, 47, 0.746);
-  width: 400px;
-  height: 2px;
-  left: 62%;
-  top: 18%;
+  width: 10px;
+  height: 20px;
+  color: white;
+  font-size: 40;
+  left: 21%;
+  top: 86.5%; 
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+.twitter i:hover {
+  color: rgb(208, 255, 0);
+}
+.inbutton button{
+  width: 200px;
+  height: 60px;
+  background: rgb(193,53,132)	;
+  position: absolute;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+  font-family: fantasy;
+  top: 82%;
+  left: 38%; 
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+.inbutton button:hover {
+  background: rgb(255, 0, 85);
 }
 .insta i {
   position: absolute;
   width: 10px;
-  height: 10px;
+  height: 20px;
   color: white;
-  font-size: 30;
-  left: 81%;
-  top: 45%; 
+  font-size: 40;
+  left: 39.5%;
+  top: 86.5%; 
   cursor: pointer;
+  transition: all 0.5s ease 0s;
 }
-.inbutton {
+.twibutton button{
   width: 200px;
-  height: 50px;
-  background: 	rgb(193,53,132);
+  height: 60px;
+  background: #6441a5	;
   position: absolute;
   color: white;
   padding: 5px;
@@ -310,25 +456,31 @@ cursor: pointer;
   cursor: pointer;
   margin: 12px 0;
   font-family: fantasy;
-  top: 40%;
-  left: 80%; 
-  border-radius: 4px;
-  border: 2px solid black;
+  top: 82%;
+  left: 56%; 
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+.twibutton button:hover {
+  background: rgb(73, 0, 95);
 }
 .twitch i {
   position: absolute;
   width: 10px;
-  height: 10px;
+  height: 20px;
   color: white;
-  font-size: 30;
-  left: 61%;
-  top: 45.5%; 
+  font-size: 40;
+  left: 57%;
+  top: 86.5%; 
   cursor: pointer;
+  transition: all 0.5s ease 0s;
 }
-.twibutton{
-  width: 200px;
-  height: 50px;
-  background: 	#6441a5;
+.shopbutton button{
+  width: 300px;
+  height: 60px;
+  background: #ffa600	;
   position: absolute;
   color: white;
   padding: 5px;
@@ -336,291 +488,174 @@ cursor: pointer;
   cursor: pointer;
   margin: 12px 0;
   font-family: fantasy;
-  top: 40%;
-  left: 60%; 
-  border-radius: 4px;
-  border: 2px solid black;
+  top: 82%;
+  left: 74%; 
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+.shopbutton button:hover {
+  background: rgb(255, 118, 5);
 }
 .shop i {
   position: absolute;
   width: 10px;
-  height: 10px;
+  height: 20px;
   color: white;
-  font-size: 30;
-  left: 71%;
-  top: 65%; 
+  font-size: 40;
+  left: 78%;
+  top: 86.5%; 
   cursor: pointer;
+  transition: all 0.5s ease 0s;
 }
-.shopbutton{
-  width: 450px;
-  height: 50px;
-  background: 	#ffa600;
+.nameofwhitebox h1{
+    color: rgb(0, 0, 0);
+    padding: 7px 0%;
+    width: 15%;
+    height: 5%;
+    z-index: 5;
+    left: 45%;
+    font-family:'Roboto', cursive ;
+    font-size: 35px;
+    top: 20%;
+    position: absolute;
+    letter-spacing: 4px;
+}
+.nameofwhitebox hr {
+  color: rgb(0, 0, 0);
+  background-color: black;
+  width: 15%;
+  z-index: 5;
+  left: 42.75%;
+  top: 27%;
+  position: absolute;
+  padding: 1px;
+}
+.nameofwhitebox p {
+  color: rgb(0, 0, 0);
+  padding: 7px 0%;
+  width: 30%;
+  height: 5%;
+  z-index: 5;
+  left: 35%;
+  text-align: center;
+  font-family:'Roboto', cursive ;
+  font-size: 25px;
+  top: 28%;
+  position: absolute;
+  letter-spacing: 4px;
+}
+.slogan hr{
+  color: rgb(0, 0, 0);
+  background-color: black;
+  width: 30%;
+  z-index: 5;
+  left: 35%;
+  top: 39%;
+  position: absolute;
+  padding: 1px;
+}
+.slogan h1{
+  color: rgb(0, 0, 0);
+  padding: 7px 0%;
+  width: 30%;
+  z-index: 5;
+  left: 35%;
+  text-align: center;
+  font-family:'Roboto', cursive ;
+  font-size: 23px;
+  top: 40%;
+  position: absolute;
+  letter-spacing: 4px;
+}
+.download button{
+  width: 400px;
+  height: 60px;
+  background: #006dfb	;
   position: absolute;
   color: white;
   padding: 5px;
-  font-size: 18px;
+  font-size: 25px;
   cursor: pointer;
   margin: 12px 0;
   font-family: fantasy;
   top: 60%;
-  left: 60%; 
-  border-radius: 4px;
-  border: 2px solid black;
+  z-index: 10;
+  left: 40%; 
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.5s ease 0s;
 }
-.vorteilemods span {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    width: 1000px;
-    height: 100px;
-    top: 32%;
-    left: 22%;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    float: unset;
-  }
-.graueboxunten {
-  position: absolute;
-  background: rgb(70, 70, 70);
-  width: 1860px;
-  height: 550px;
-  left: -1%;
-  top: 1200%;
-  padding: 10px;
-  z-index: -10;
+.download button:hover {
+  background: rgb(25, 0, 255);
 }
-.features span {
+.nameofwhitebox i {
   position: absolute;
-    color: rgb(255, 255, 255);
-    width: 900px;
-    height: 100px;
-    top: 10%;
-    left: 36%;
-    font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition: 2s;
-}
-.verbessere span {
-  position: absolute;
-    color: rgb(255, 255, 255);
-    width: 900px;
-    height: 100px;
-    top: 25%;
-    left: 29%;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transition-delay: 5s;
-}
-.strich5 {
-  position: absolute;
-  background: rgb(109, 109, 109);
-  width: 400px;
-  height: 2px;
-  left: 34%;
-  top: 20%;
-}
-.anmeldebutton {
-  width: 150px;
-  height: 50px;
-  background: 	#0000003d;
-  position: absolute;
+  width: 10px;
+  height: 20px;
   color: white;
-  padding: 5px;
+  font-size: 40;
+  z-index: 11;
+  left: 43%;
+  top: 62.5%; 
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+.angle i {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  z-index: 30;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  left: 49.5%;
+  top: 60%; 
+  box-shadow: black;
+  transition: all 0.5s ease 0s;
+}
+.cookie p { 
+  margin: 24px 0;
+  line-height: 2;
+}
+.cookie {
+  position: fixed;
+  bottom: -100;
+  left: 0;
+  z-index: 10000;
+  right: 0;
+  background: rgb(6, 0, 58);
+  color: white;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px black;
+
+  transition: 400ms;
+}
+.cookie.active {
+  bottom: 0;
+}
+
+.cookie a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #ff0000;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
   font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  margin: 12px 0;
-  font-family: fantasy;
-  text-decoration: none;
-  top: 5%;
-  left: 91%; 
-  border-radius: 25px;
-  border: 2px solid rgb(187, 184, 184);
 }
-.sidebar{
-  float: left;
-  width: 150px;
-  height: 800%;
-  margin-left: -200px;
-  background: #2e2e2e8f;
-  overflow: hidden;
-  transition: 0.8s all;
-  border-radius: 10px;
-}
-.side{
-  margin-left: 0;
-}
-.sidebar ul{
-  margin: 0;
-  padding: 0;
-}
-.sidebar ul li{
-  list-style: none;
-}
-.sidebar ul li a{
-  text-decoration: none;
-  color: white;
-  height: 80px;
-  width: 100%;
-  font-size: 25px;
-  line-height: 80px;
-  text-align: center;
-  display: block;
-  transition: 0.6 all;
-}
-.sidebar ul li a:hover {
-  background: #383a3b;
-}
-.btn{
-  float: left;
-  padding: 0 10px;
-  font-size: 55px;
-  text-decoration: none;
-  position: absolute;
-  color: #434950;
-  background-color: #2e2e2e8f;
-  border-radius: 10px;
-  font-family: Ionicons;
-  cursor: pointer;
-  z-index: 2;
-}
-.btn:before{
-  content: "\f20d";
-}
-.btnc:before{
-  content: "\f12a";
-  border-radius: 0px;
-}
-.untengrau{
+.softwere-box {
+    background-color: rgb(36, 36, 36);
+    padding: 7px 0%;
+    width: 100%;
+    height: 75%;
+    z-index: 2;
+    top: 195%;
     position: absolute;
-    background: rgb(27, 26, 26);
-    width: 1838px;
-    height: 75px;
-    left: -0.15%;
-    top: 1800%;
-    padding: 10px;
-    text-decoration: none;
-    border: 3px solid #363636;
-}
-.azo a {
-  top: 40%;
-  left: 5%;
-  width: 150px;
-  height: 0px;
-  font-family: fantasy ;
-  font-size: 17px;
-  color: rgba(172, 172, 172, 0.623);
-  position: absolute;
-  text-decoration: none;
-  -webkit-transition: color ease-in 0.1s;
-  -moz-transition: color ease-in 0.1s;
-  -o-transition: color ease-in 0.1s;
-  transition: color ease-in 0.1s;
-}
-.kontakt a{
-  top: 40%;
-  left: 17%;
-  width: 150px;
-  height: 0px;
-  font-family: fantasy ;
-  font-size: 17px;
-  color: rgba(172, 172, 172, 0.623);
-  position: absolute;
-  text-decoration: none;
-  -webkit-transition: color ease-in 0.1s;
-  -moz-transition: color ease-in 0.1s;
-  -o-transition: color ease-in 0.1s;
-  transition: color ease-in 0.1s;
-}
-.copy a{
-  top: 40%;
-  left: 26.5%;
-  width: 150px;
-  height: 0px;
-  font-family: fantasy ;
-  font-size: 17px;
-  color: rgba(172, 172, 172, 0.623);
-  position: absolute;
-  text-decoration: none;
-  -webkit-transition: color ease-in 0.1s;
-  -moz-transition: color ease-in 0.1s;
-  -o-transition: color ease-in 0.1s;
-  transition: color ease-in 0.1s;
-}
-.dmca a{
-  top: 40%;
-  left: 37%;
-  width: 150px;
-  height: 0px;
-  font-family: fantasy ;
-  font-size: 17px;
-  color: rgba(172, 172, 172, 0.623);
-  position: absolute;
-  text-decoration: none;
-  -webkit-transition: color ease-in 0.1s;
-  -moz-transition: color ease-in 0.1s;
-  -o-transition: color ease-in 0.1s;
-  transition: color ease-in 0.1s;
-}
-.privacy a{
-  top: 40%;
-  left: 50%;
-  width: 150px;
-  height: 50px;
-  font-family: fantasy;
-  text-decoration: none;
-  font-size: 17px;
-  color: rgba(172, 172, 172, 0.623);
-  position: absolute;
-  -webkit-transition: color ease-in 0.1s;
-  -moz-transition: color ease-in 0.1s;
-  -o-transition: color ease-in 0.1s;
-  transition: color ease-in 0.1s;
-}
-.cookie a{
-  top: 40%;
-  left: 63%;
-  width: 150px;
-  height: 0px;
-  font-family: fantasy ;
-  font-size: 17px;
-  color: rgba(172, 172, 172, 0.623);
-  position: absolute;
-  text-decoration: none;
-  -webkit-transition: color ease-in 0.1s;
-  -moz-transition: color ease-in 0.1s;
-  -o-transition: color ease-in 0.1s;
-  transition: color ease-in 0.1s;
-}
-.datent a{
-  top: 40%;
-  left: 79%;
-  width: 150px;
-  height: 0px;
-  font-family: fantasy ;
-  font-size: 17px;
-  color: rgba(172, 172, 172, 0.623);
-  position: absolute;
-  text-decoration: none;
-  -webkit-transition: color ease-in 0.1s;
-  -moz-transition: color ease-in 0.1s;
-  -o-transition: color ease-in 0.1s;
-  transition: color ease-in 0.1s;
-}
-.über a{
-  top: 40%;
-  left: 90%;
-  width: 150px;
-  height: 0px;
-  font-family: fantasy ;
-  font-size: 17px;
-  color: rgb(172, 172, 172, 0.623);
-  position: absolute;
-  background-color: white;
-  text-decoration: none;
-  -webkit-transition: color ease-in 0.1s;
-  -moz-transition: color ease-in 0.1s;
-  -o-transition: color ease-in 0.1s;
-  transition: color ease-in 0.1s;
-}
-a:hover {
-  color: rgb(12, 128, 122);
 }
